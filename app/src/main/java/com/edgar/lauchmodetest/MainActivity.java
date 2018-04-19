@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         ((Button)findViewById(R.id.btn_single_top)).setOnClickListener(mOnClickListener);
 
         tvInfo = (TextView)findViewById(R.id.tv_information);
-        tvInfo.setText(currentInfoString);
+        tvInfo.setText("Info: " + currentInfoString);
 
     }
 

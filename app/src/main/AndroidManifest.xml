@@ -16,10 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StandardActivity" />
-        <activity android:name=".SingleTopActivity" />
-        <activity android:name=".SingleTaskActivity" />
-        <activity android:name=".SingleInstanceActivity"></activity>
+        <activity android:name=".StandardActivity"
+            android:launchMode="standard"
+            android:label="@string/launch_string_standard"/>
+        <activity android:name=".SingleTopActivity"
+            android:launchMode="singleTop"
+            android:label="@string/launch_string_single_top"/>
+        <activity android:name=".SingleTaskActivity"
+            android:launchMode="singleTask"
+            android:label="@string/launch_string_single_task"/>
+        <activity android:name=".SingleInstanceActivity"
+            android:launchMode="singleInstance"
+            android:label="@string/launch_string_single_instance"/>
     </application>
 
 </manifest>

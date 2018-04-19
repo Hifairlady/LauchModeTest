@@ -17,6 +17,6 @@ public class DeliverString {
     }
 
     public String getDeliverString() {
-        return "Info: " + deliverString;
+        return deliverString;
     }
 }

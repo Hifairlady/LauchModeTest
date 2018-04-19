@@ -37,17 +37,19 @@ public class StandardActivity extends AppCompatActivity {
         ((Button)findViewById(R.id.btn_single_top)).setOnClickListener(mOnClickListener);
 
         tvInfo = (TextView)findViewById(R.id.tv_information);
-        tvInfo.setText(currentInfoString);
+        tvInfo.setText("Info: " + currentInfoString);
 
     }
 
     @Override
     protected void onDestroy() {
-        super.onDestroy();
         int startPos = 0;
-        int endPos = currentInfoString.lastIndexOf("SingleStandard");
+        int endPos = currentInfoString.lastIndexOf("Standard");
+        Log.d(TAG, "onDestroy: " + currentInfoString);
+        Log.d(TAG, "onDestroy: length " + currentInfoString.length() + " endpos: " + endPos);
         currentInfoString = currentInfoString.substring(startPos, endPos);
         DeliverString.getInstance().setDeliverString(currentInfoString);
+        super.onDestroy();
     }
 
     private View.OnClickListener mOnClickListener = new View.OnClickListener() {
