@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LauchModeTest</string>
+    <string name="launch_string_standard">Standard</string>
+    <string name="launch_string_single_top">SingleTop</string>
+    <string name="launch_string_single_task">SingleTask</string>
+    <string name="launch_string_single_instance">SingleInstance</string>
+</resources>
